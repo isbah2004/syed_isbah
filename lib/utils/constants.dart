@@ -8,9 +8,9 @@ class Constants {
   static const String logo = 'assets/images/logo.png';
   static const String diary = 'Dairy';
   static const String wallpaper = 'Wallpapers';
-  static const String photoEditorPath = 'https://drive.google.com/drive/folders/1GnJFfGyBmCTWh6ZjO4GdG-w6sHcB8sNm';
-  static const String diaryPath = 'https://drive.google.com/drive/folders/1GnJFfGyBmCTWh6ZjO4GdG-w6sHcB8sNm';
-  static const String wallpaperPath = 'https://drive.google.com/drive/folders/1GnJFfGyBmCTWh6ZjO4GdG-w6sHcB8sNm';
+  static const String photoEditorPath = 'https://drive.google.com/drive/folders/1GnJFfGyBmCTWh6ZjO4GdG-w6sHcB8sNm?usp=sharing';
+  static const String diaryPath = 'https://drive.google.com/drive/folders/1GnJFfGyBmCTWh6ZjO4GdG-w6sHcB8sNm?usp=sharing';
+  static const String wallpaperPath = 'https://drive.google.com/drive/folders/1GnJFfGyBmCTWh6ZjO4GdG-w6sHcB8sNm?usp=sharing';
   static const String photoEditor = 'Photo Editor';
   static const String diaryApp = 'Diary App';
   static const String wallpaperApp = 'Wallpaper App';
