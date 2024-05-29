@@ -1,6 +1,6 @@
  
   import 'package:flutter/material.dart';
-import 'package:my_portfolio/reusablewidgets/apk_downloader.dart';
+import 'package:url_launcher/url_launcher.dart' as launcher;
 import 'package:my_portfolio/theme/theme_data.dart';
 import 'package:my_portfolio/utils/constants.dart';
  Widget showDesktopEditorDialogBox(BuildContext context) {
@@ -71,7 +71,7 @@ import 'package:my_portfolio/utils/constants.dart';
                   Align(
                     alignment: Alignment.bottomRight,
                     child: ElevatedButton(
-                      onPressed: () {downloadFile(Constants.photoEditor, Constants.photoEditorPath);},
+                      onPressed: () {launcher.launchUrl(Uri.parse(Constants.photoEditorPath));},
                       child: Text(
                         'Download Apk',
                         style: AppTheme.font20,

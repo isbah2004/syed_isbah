@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/reusablewidgets/apk_downloader.dart';
+import 'package:url_launcher/url_launcher.dart' as launcher;
 import 'package:my_portfolio/theme/theme_data.dart';
 import 'package:my_portfolio/utils/constants.dart';
 
@@ -71,7 +71,7 @@ Widget showDesktopDiaryDialogBox(context) {
               alignment: Alignment.bottomRight,
               child: ElevatedButton(
                 onPressed: () {
-                  downloadFile(Constants.diary, Constants.diaryPath);
+                 launcher.launchUrl(Uri.parse(Constants.diaryPath));
                 },
                 child: Text(
                   'Download Apk',
