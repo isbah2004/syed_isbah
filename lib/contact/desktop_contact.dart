@@ -4,14 +4,14 @@ import 'package:my_portfolio/reusablewidgets/ink_widget.dart';
 import 'package:my_portfolio/theme/theme_data.dart';
 import 'package:my_portfolio/utils/constants.dart';
 import 'package:url_launcher/url_launcher.dart' as launcher;
-
+ 
 class DesktopContact extends StatelessWidget {
   const DesktopContact({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 400,
+      height: 300,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -26,7 +26,7 @@ class DesktopContact extends StatelessWidget {
               InkWidget(
                 onTap: () {},
                 asset: Constants.copywriteLogo,
-                size: 15,
+                size: 15, 
               ),
               Text(
                 ' - 2024 @ ${Constants.name}',
@@ -48,25 +48,25 @@ class DesktopContact extends StatelessWidget {
                     size: 25,
                     onTap: () {
                       launcher.launchUrl(Uri.parse(Constants.whatsappLink));
-                    }),
+                    }, message: Constants.phoneNo,),
                 InkWidget(
                     asset: Constants.linkedinLogo,
                     size: 25,
                     onTap: () {
                       launcher.launchUrl(Uri.parse(Constants.linkedinLink));
-                    }),
+                    }, ),
                 InkWidget(
                     asset: Constants.phoneLogo,
                     size: 25,
                     onTap: () {
                       launcher.launchUrl(Uri.parse(Constants.phoneLink));
-                    }),
+                    }, message: Constants.phoneNo,),
                 InkWidget(
                     asset: Constants.mailLogo,
                     size: 25,
                     onTap: () {
                       launcher.launchUrl(Uri.parse(Constants.gmailLink));
-                    }),
+                    }, message: Constants.emailAddress,),
                 InkWidget(
                     asset: Constants.githubLogo,
                     size: 28,

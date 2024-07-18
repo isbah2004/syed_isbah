@@ -11,7 +11,7 @@ class MobileSkills extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 800,
+      height: 400,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 30),
         child: Column(

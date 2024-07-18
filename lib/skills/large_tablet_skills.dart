@@ -11,7 +11,7 @@ class LargeTabletSkill extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 600,
+      height: 450,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 40),
         child: Column(

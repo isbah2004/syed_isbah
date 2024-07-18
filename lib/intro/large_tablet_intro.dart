@@ -14,7 +14,7 @@ class LargeTabletIntro extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(right: 40, left: 30),
       child: SizedBox(
-        height: 600,
+        height: 500,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.center,

@@ -8,7 +8,7 @@ class MobileAbout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height * 0.4,
+      height: 300,
       child: Padding(
         padding: const EdgeInsets.only(left: 30),
         child: Column(

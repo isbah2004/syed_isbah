@@ -5,18 +5,23 @@ import 'package:my_portfolio/intro/intro.dart';
 import 'package:my_portfolio/skills/skills.dart';
 
 class Constants {
+  static const String phoneNo = '+92 3072118499';
+  static const String emailAddress = 'syedisbah50@gmail.com';
   static const String logo = 'assets/images/logo.png';
   static const String diary = 'Dairy';
   static const String wallpaper = 'Wallpapers';
-  static const String photoEditorPath = 'https://drive.google.com/drive/folders/1GnJFfGyBmCTWh6ZjO4GdG-w6sHcB8sNm?usp=sharing';
-  static const String diaryPath = 'https://drive.google.com/drive/folders/1GnJFfGyBmCTWh6ZjO4GdG-w6sHcB8sNm?usp=sharing';
-  static const String wallpaperPath = 'https://drive.google.com/drive/folders/1GnJFfGyBmCTWh6ZjO4GdG-w6sHcB8sNm?usp=sharing';
+  static const String photoEditorPath =
+      'https://drive.google.com/drive/folders/1GnJFfGyBmCTWh6ZjO4GdG-w6sHcB8sNm?usp=sharing';
+  static const String diaryPath =
+      'https://drive.google.com/drive/folders/1GnJFfGyBmCTWh6ZjO4GdG-w6sHcB8sNm?usp=sharing';
+  static const String wallpaperPath =
+      'https://drive.google.com/drive/folders/1GnJFfGyBmCTWh6ZjO4GdG-w6sHcB8sNm?usp=sharing';
   static const String photoEditor = 'Photo Editor';
   static const String diaryApp = 'Diary App';
   static const String wallpaperApp = 'Wallpaper App';
   static const String name = 'Syed Isbah Naushad';
   static const String resumeLink =
-      'https://drive.google.com/file/d/1imB3mpBJxv2dJhuKP2yRG-fOYeFggxVl/view?usp=sharing';
+      'https://drive.google.com/file/d/1gGXeVUftkKZf84hScFKj-mMoqEw9mWx_/view?usp=drive_link';
   static const String linkedinLink =
       'https://www.linkedin.com/in/syed-isbah-9073b429b/';
   static const String gmailLink =
@@ -39,7 +44,7 @@ class Constants {
   static const String introTitle = 'I am $name';
   static const String introSubtitle =
       'A Self-Taught App Developer skilled in Flutter, Python, and FastAPI.';
-  static const String profileImage = 'assets/images/profile picture.jpg';
+  static const String profileImage = 'assets/images/profile picture.png';
   static const String resume = 'Resume';
   static const String aboutMe = 'About Me';
   static const String aboutMeParagraph =

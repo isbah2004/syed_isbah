@@ -8,7 +8,7 @@ class LargeTabletAbout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 600,
+      height: 450,
       child: Padding(
         padding: const EdgeInsets.only(left: 40),
         child: Column(

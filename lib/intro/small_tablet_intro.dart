@@ -12,7 +12,7 @@ class SmallTabletIntro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 800,
+      height: 650,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 30),
         child: Column(

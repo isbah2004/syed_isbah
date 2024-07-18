@@ -10,7 +10,7 @@ class LargeTabletContact extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 330,
+      height: 250,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -42,7 +42,7 @@ class LargeTabletContact extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                InkWidget(
+                InkWidget(message: Constants.phoneNo,
                     asset: Constants.whatsappLogo,
                     size: 25,
                     onTap: () {
@@ -54,13 +54,13 @@ class LargeTabletContact extends StatelessWidget {
                     onTap: () {
                       launcher.launchUrl(Uri.parse(Constants.linkedinLink));
                     }),
-                InkWidget(
+                InkWidget(message: Constants.phoneNo,
                     asset: Constants.phoneLogo,
                     size: 25,
                     onTap: () {
                       launcher.launchUrl(Uri.parse(Constants.phoneLink));
                     }),
-                InkWidget(
+                InkWidget(message: Constants.emailAddress,
                     asset: Constants.mailLogo,
                     size: 25,
                     onTap: () {

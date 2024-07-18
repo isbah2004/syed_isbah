@@ -14,10 +14,23 @@ Widget showDesktopDiaryDialogBox(context) {
           children: [
             Align(
               alignment: Alignment.topLeft,
-              child: Text(
-                textAlign: TextAlign.left,
-                'Diary App',
-                style: AppTheme.font25Bold,
+              child: Row(
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    icon: const Icon(Icons.arrow_back),
+                  ),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Text(
+                    textAlign: TextAlign.left,
+                    'Diary App',
+                    style: AppTheme.font25Bold,
+                  ),
+                ],
               ),
             ),
             const SizedBox(
@@ -30,9 +43,9 @@ Widget showDesktopDiaryDialogBox(context) {
                   padding: const EdgeInsets.all(8.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10),
-                    child: const Image(
-                      height: 430,
-                      image: AssetImage(
+                    child: Image(
+                      height: MediaQuery.of(context).size.height * 0.68,
+                      image: const AssetImage(
                         Constants.diary1,
                       ),
                     ),
@@ -42,9 +55,9 @@ Widget showDesktopDiaryDialogBox(context) {
                   padding: const EdgeInsets.all(8.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10),
-                    child: const Image(
-                      height: 430,
-                      image: AssetImage(
+                    child: Image(
+                      height: MediaQuery.of(context).size.height * 0.68,
+                      image: const AssetImage(
                         Constants.diary2,
                       ),
                     ),
@@ -54,9 +67,9 @@ Widget showDesktopDiaryDialogBox(context) {
                   padding: const EdgeInsets.all(8.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10),
-                    child: const Image(
-                      height: 430,
-                      image: AssetImage(
+                    child: Image(
+                      height: MediaQuery.of(context).size.height * 0.68,
+                      image: const AssetImage(
                         Constants.diary3,
                       ),
                     ),
@@ -71,7 +84,7 @@ Widget showDesktopDiaryDialogBox(context) {
               alignment: Alignment.bottomRight,
               child: ElevatedButton(
                 onPressed: () {
-                 launcher.launchUrl(Uri.parse(Constants.diaryPath));
+                  launcher.launchUrl(Uri.parse(Constants.diaryPath));
                 },
                 child: Text(
                   'Download Apk',

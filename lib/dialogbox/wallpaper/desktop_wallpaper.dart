@@ -14,10 +14,23 @@ Widget showDesktopWallpaperDialogBox(BuildContext context) {
           children: [
             Align(
               alignment: Alignment.topLeft,
-              child: Text(
-                textAlign: TextAlign.left,
-                'Wallpaper App',
-                style: AppTheme.font25Bold,
+              child: Row(
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    icon: const Icon(Icons.arrow_back),
+                  ),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Text(
+                    textAlign: TextAlign.left,
+                    'Wallpaper App',
+                    style: AppTheme.font25Bold,
+                  ),
+                ],
               ),
             ),
             const SizedBox(
@@ -30,9 +43,9 @@ Widget showDesktopWallpaperDialogBox(BuildContext context) {
                   padding: const EdgeInsets.all(8.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10),
-                    child: const Image(
-                      height: 430,
-                      image: AssetImage(
+                    child: Image(
+                      height: MediaQuery.of(context).size.height * 0.68,
+                      image: const AssetImage(
                         Constants.wallpaper1,
                       ),
                     ),
@@ -42,9 +55,9 @@ Widget showDesktopWallpaperDialogBox(BuildContext context) {
                   padding: const EdgeInsets.all(8.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10),
-                    child: const Image(
-                      height: 430,
-                      image: AssetImage(
+                    child: Image(
+                      height: MediaQuery.of(context).size.height * 0.68,
+                      image: const AssetImage(
                         Constants.wallpaper2,
                       ),
                     ),
@@ -54,9 +67,9 @@ Widget showDesktopWallpaperDialogBox(BuildContext context) {
                   padding: const EdgeInsets.all(8.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10),
-                    child: const Image(
-                      height: 430,
-                      image: AssetImage(
+                    child: Image(
+                      height: MediaQuery.of(context).size.height * 0.68,
+                      image: const AssetImage(
                         Constants.wallpaper3,
                       ),
                     ),
@@ -71,7 +84,7 @@ Widget showDesktopWallpaperDialogBox(BuildContext context) {
               alignment: Alignment.bottomRight,
               child: ElevatedButton(
                 onPressed: () {
-                   launcher.launchUrl(Uri.parse(Constants.wallpaperPath));
+                  launcher.launchUrl(Uri.parse(Constants.wallpaperPath));
                 },
                 child: Text(
                   'Download Apk',
