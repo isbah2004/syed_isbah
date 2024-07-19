@@ -21,7 +21,7 @@ class Constants {
   static const String wallpaperApp = 'Wallpaper App';
   static const String name = 'Syed Isbah Naushad';
   static const String resumeLink =
-      'https://drive.google.com/file/d/1gGXeVUftkKZf84hScFKj-mMoqEw9mWx_/view?usp=drive_link';
+      'https://drive.google.com/file/d/13LHGnV_IaZv7na228d4dMBzD0scdWaYt/view?usp=sharing';
   static const String linkedinLink =
       'https://www.linkedin.com/in/syed-isbah-9073b429b/';
   static const String gmailLink =
