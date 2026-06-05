@@ -9,7 +9,17 @@ __v0_jsx-dev-runtime.ts
 # Environment variables
 .env*.local
 
-# Common ignores
-node_modules
+# Next.js build output
 .next/
+out/
+
+# Dependency and cache folders
+node_modules/
+.turbo/
+.cache/
+
+# Logs and local artifacts
+*.log
+*.tsbuildinfo
+coverage/
 .DS_Store
