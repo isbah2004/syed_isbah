@@ -30,7 +30,7 @@ export default function Home() {
     <div className="hero-shell min-h-screen bg-background text-foreground">
       <Navigation />
       
-      <main className="max-w-6xl mx-auto px-6 pt-28 pb-12 lg:pt-32 lg:pb-16">
+      <main className="max-w-6xl mx-auto px-6 pt-10 pb-12 md:pt-28 lg:pt-32 lg:pb-16">
         <section className="relative overflow-hidden rounded-[2rem] border border-border bg-[linear-gradient(135deg,rgba(59,130,246,0.14),rgba(255,255,255,0.95)_35%,rgba(37,99,235,0.08))] px-6 py-12 shadow-[0_24px_80px_rgba(15,23,42,0.08)] lg:px-10 lg:py-16">
           <div className="hero-glow hero-glow-left" />
           <div className="hero-glow hero-glow-right" />

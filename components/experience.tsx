@@ -6,6 +6,19 @@ import pipfaLogo from '../assets/pipfa_logo.png';
 export default function Experience() {
   const experiences = [
     {
+      role: 'Mobile Application Developer',
+      company: 'Pakistan Institute of Public Finance Accountants (PIPFA)',
+      logo: pipfaLogo,
+      location: 'Remote',
+      period: 'Dec 2025 – Present',
+      description: 'Developed secure, high-performance Flutter/Dart accounting apps featuring data-heavy dashboards and secure authentication.',
+      highlights: [
+        'Built secure authentication systems with industry best practices',
+        'Managed data-heavy dashboards for financial tracking',
+        'Optimized legacy API integrations under organizational data policies',
+      ],
+    },
+    {
       role: 'Flutter Developer',
       company: 'Innovative Widget',
       logo: innovativeLogo,
@@ -29,19 +42,6 @@ export default function Experience() {
         'Gained hands-on experience with localized databases (SQLite/Hive)',
         'Implemented state management solutions',
         'Contributed to weekly sprints and code reviews',
-      ],
-    },
-    {
-      role: 'Mobile Application Developer',
-      company: 'Pakistan Institute of Public Finance Accountants (PIPFA)',
-      logo: pipfaLogo,
-      location: 'Remote',
-      period: 'Dec 2025 – Present',
-      description: 'Developed secure, high-performance Flutter/Dart accounting apps featuring data-heavy dashboards and secure authentication.',
-      highlights: [
-        'Built secure authentication systems with industry best practices',
-        'Managed data-heavy dashboards for financial tracking',
-        'Optimized legacy API integrations under organizational data policies',
       ],
     },
   ];
