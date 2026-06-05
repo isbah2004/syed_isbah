@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   title: 'Syed Isbah - Flutter Developer',
   description: 'Mobile Application Developer | 3+ years of experience | Published 5+ apps',
   generator: 'v0.app',
+  manifest: '/site.webmanifest',
+  themeColor: '#2563eb',
   icons: {
     icon: [
       {
@@ -25,6 +27,7 @@ export const metadata: Metadata = {
         type: 'image/svg+xml',
       },
     ],
+    shortcut: '/favicon.ico',
     apple: '/apple-icon.png',
   },
 }
